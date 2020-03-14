@@ -1,0 +1,80 @@
+body {
+  /* overflow: hidden; */
+  background-color: black;
+}
+
+.eye-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.eye-border {
+  width: 500px;
+  height: 200px;
+  /* background-color: white; */
+  /* background-image: url(../img/eye-border.svg); */
+  border-radius: 50%;
+
+}
+
+.eyeball {
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+
+}
+
+/* .eye-area {
+  position: absolute;
+  top: 107px;
+  left: 100px;
+  width: 507px;
+  height: 222px;
+  background-color: red;
+} */
+
+
+
+
+
+
+
+
+
+/* ------------------------------- */
+
+/* .main-box {
+position: relative;
+height: 100vh;
+} */
+
+/* img {
+  position: absolute;
+}
+.main-road {
+  width: 55vw;
+  top: 32%;
+  left: 23%;
+}
+
+.door-white {
+  width: 6.7vw;
+  left: 47.1%;
+  top: 9.8%;
+}
+
+.door-black {
+  width: 4.6vw;
+  left: 49.3%;
+  top: 10%;
+} */
