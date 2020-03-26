@@ -1,26 +1,185 @@
 body {
+  overflow: hidden;
   background-color: black;
 }
 
-.box-left {
-  margin-left: 200px;
-  margin-top: 100px;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "PartnerCondensed";
+  font-weight: bold;
+  src: url(../fonts/PartnerCondensed.otf) format('truetype');
+}
+
+.mainRoad {
+  position: absolute;
+  width: 75vh;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.door {
+  position: absolute;
+  width: 4.4vh;
+  left: 50.4%;
+  bottom: 51.2vh;
+  transform-origin: right;
+  transition: all 150ms ease-in-out;
+  z-index: 2;
+}
+
+.door:hover {
+  perspective: 10px;
+  transform: rotateY(50deg);
+}
+
+.roadBox {
   position: relative;
-  -webkit-perspective: 442px;
+  top: 63vh;
+  left: 50%;
+  width: 103vh;
+  transform: translateX(-50%);
+}
+
+.boxLeft {
+  position: absolute;
+  top: 14vh;
+  left: 2vw;
+  width: 114vh;
   perspective: 1000px;
 }
-.rune-box-one {
-  width: 60vh;
-  height: 40vw;
-  border: 5px solid white;
-  -webkit-transform: rotateX(-360deg) rotateY(-297deg);
-  transform: rotateX(-360deg) rotateY(-297deg);
-
-}
-
-p {
+.runeBoxOne {
   color: white;
   position: absolute;
   writing-mode: vertical-lr;
   text-orientation: upright;
+  position: relative;
+  width: 51vh;
+  height: 36vw;
+  border: 1vw solid white;
+  background-color: black;
+  transform: rotateX(-360deg) rotateY(-297deg);
+  overflow: hidden;
+
+}
+
+
+
+.boxMid {
+  position: absolute;
+  z-index: -1;
+  top: 42vw;
+  left: 4.7vw;
+  width: 83.7vw;
+  height: 6.3vw;
+  border: 1vw solid white;
+}
+
+
+
+
+.boxRight {
+  position: absolute;
+  top: 14.4vh;
+  left: 66vw;
+  perspective: 1000px;
+
+}
+
+.runeBoxThree {
+  color: white;
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  position: relative;
+  width: 51vh;
+  height: 36vw;
+  border: 1vw solid white;
+  background-color: black;
+  transform: rotateX(360deg) rotateY(301deg);
+  overflow: hidden;
+}
+
+
+
+
+.left {
+  font-size: 60px;
+}
+.mid {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 60px;
+}
+.right {
+  position: absolute;
+  top: 62%;
+  left: 79%;
+  font-size: 60px;
+}
+.four {
+  position: absolute;
+  top: 10%;
+  left: 56%;
+  font-size: 60px;
+}
+.five {
+  position: absolute;
+  top: 25%;
+  left: 16%;
+  font-size: 60px;
+}
+
+/* ---------RIGHT---------- */
+
+.leftRight {
+  position: absolute;
+  top: 25%;
+  left: 16%;
+  font-size: 60px;
+}
+
+.midRight {
+  position: absolute;
+  top: 10%;
+  left: 56%;
+  font-size: 60px;
+}
+
+.rightRight {
+  position: absolute;
+  top: 62%;
+  left: 79%;
+  font-size: 60px;
+}
+
+.fourRight {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 60px;
+}
+
+.fiveRight {
+  font-size: 60px;
+}
+
+
+
+
+
+.sick {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "PartnerCondensed", monospace;
+  font-weight: bold;
+  font-size: 4vw;
+  z-index: 2;
 }

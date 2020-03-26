@@ -35,15 +35,25 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.orientation-txt {
-  font-family: "PartnerCondensed", monospace;
-  font-size: 60px;
-  color: white;
+
+.orientation-img {
   position: absolute;
-  top: 50vh;
-  left: 16vw;
-  transform: translate(-50%, -50%);
-  animation: txt-rotation 5s ease infinite;
+  top: 50%;
+  left: 50%;
+  width: 32%;
+  transform: translate(-50%,-50%);
+}
+
+.orientation-img-two {
+  position: absolute;
+  top: 41.4%;
+  left: 41.5%;
+  width: 17%;
+  height: 17%;
+  /* transform: translate(-50%,-50%); */
+  background-color: white;
+  animation: img-rotation 5s ease infinite;
+  transform-origin: center;
 }
 
 .orientation-box {
@@ -54,25 +64,13 @@ body {
     display: block;
   }
 
-  @keyframes txt-rotation {
+  @keyframes img-rotation {
     0% {
-      transform: rotateZ(0deg);
-      display: block;
-    }
-    20% {
-      transform: rotateZ(0deg);
-      display: block;
+
     }
     50% {
-      transform: rotateZ(-270deg);
-      display: block;
-    }
-    90% {
-      transform: rotateZ(0deg);
-    }
 
-    100% {
-      transform: rotateZ(0deg);
+      transform: rotateZ(90deg);
     }
 
   }

@@ -1,30 +1,137 @@
-.rip-man {
-  position: absolute;
-  height: 5vh;
-  top: 50%;
-  left: 70%;
+body {
+  overflow: hidden;
+  background-color: black;
 }
-.rip-man2 {
-  position: absolute;
-  height: 5vh;
-  top: 55%;
-  left: 65%;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.rip-man3 {
-  position: absolute;
-  height: 5vh;
-  top: 60%;
-  left: 60%;
+
+@font-face {
+  font-family: "PartnerCondensed";
+  font-weight: bold;
+  src: url(../fonts/PartnerCondensed.otf) format('truetype');
 }
-.rip-man4 {
+
+.mainRoad {
   position: absolute;
-  height: 5vh;
-  top: 55%;
-  left: 55%;
-}
-.rip-man5 {
-  position: absolute;
-  height: 5vh;
-  top: 50%;
+  width: 75vh;
+  bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
 }
+
+.door {
+  position: absolute;
+  width: 4.4vh;
+  left: 50.4%;
+  bottom: 51.2vh;
+  transform-origin: right;
+  transition: all 150ms ease-in-out;
+}
+
+.door:hover {
+  perspective: 10px;
+  transform: rotateY(50deg);
+}
+
+.roadBox {
+  position: relative;
+  top: 63vh;
+  left: 50%;
+  width: 103vh;
+  transform: translateX(-50%);
+}
+
+.windows {
+  position: absolute;
+  top: 32%;
+  left: 91.6%;
+  width: 3.8vw;
+}
+
+
+/* .horizontalRoad {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  width: 103vh;
+  transform: translateX(-50%);
+} */
+
+.sick {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "PartnerCondensed", monospace;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+.right-rip-man {
+  position: absolute;
+  height: 7vh;
+  top: -10%;
+  left: 93%;
+  transform-origin: center;
+}
+.right-rip-man2 {
+  position: absolute;
+  height: 7vh;
+  top: 4%;
+  left: 89%;
+}
+.right-rip-man3 {
+  position: absolute;
+  height: 7vh;
+  top: 12%;
+  left: 85%;
+}
+.right-rip-man4 {
+  position: absolute;
+  height: 7vh;
+  top: -5.2%;
+  left: 82%;
+}
+.right-rip-man5 {
+  position: absolute;
+  height: 7vh;
+  top: 5.8%;
+  left: 78%;
+}
+.right-rip-man6 {
+  position: absolute;
+  height: 7vh;
+  top: -2.8%;
+  left: 74%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EOF */
