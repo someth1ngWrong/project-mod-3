@@ -119,6 +119,55 @@ body {
 
 
 
+.orientation-box {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 3;
+  background-color: black;
+  width: 170vw;
+  height: 150vh;
+}
+
+.orientation-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32%;
+  transform: translate(-50%,-50%);
+}
+
+.orientation-img-two {
+  position: absolute;
+  top: 41.4%;
+  left: 41.5%;
+  width: 17%;
+  height: 17%;
+  /* transform: translate(-50%,-50%); */
+  background-color: white;
+  animation: img-rotation 5s ease infinite;
+  transform-origin: center;
+}
+
+.orientation-box {
+  display: none;
+}
+@media (orientation: portrait) {
+  .orientation-box {
+    display: block;
+  }
+
+  @keyframes img-rotation {
+    0% {
+
+    }
+    50% {
+
+      transform: rotateZ(90deg);
+    }
+
+  }
+}
 
 
 
